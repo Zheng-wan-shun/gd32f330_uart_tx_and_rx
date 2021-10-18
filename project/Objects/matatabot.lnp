@@ -1,0 +1,20 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\objects\system_gd32f3x0.o"
+".\objects\startup_gd32f3x0.o"
+".\objects\gd32f3x0_rcu.o"
+".\objects\gd32f3x0_misc.o"
+".\objects\gd32f3x0_dac.o"
+".\objects\gd32f3x0_exti.o"
+".\objects\gd32f3x0_syscfg.o"
+".\objects\gd32f3x0_fmc.o"
+".\objects\gd32f3x0_dma.o"
+".\objects\gd32f3x0_timer.o"
+".\objects\gd32f3x0_usart.o"
+".\objects\gd32f3x0_gpio.o"
+".\objects\gd32f3x0_adc.o"
+".\objects\gd32f3x0_it.o"
+".\objects\main.o"
+--library_type=microlib --strict --scatter ".\Objects\matatabot.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\matatabot.map" -o .\Objects\matatabot.axf
